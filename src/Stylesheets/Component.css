@@ -1,0 +1,35 @@
+#button{
+    background-color: rgba(0, 0, 0, 0.1);
+    border: 2px solid rgb(171, 178, 243);
+    border-radius: 15px;
+    margin: 15px;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-family:'Times New Roman', Times, serif;
+    font-size: medium;
+}
+#button:hover{
+    background-color: rgba(184, 240, 0, 0.1);
+    transform: scale(1.04);
+}
+
+input{
+    border-radius: 15px;
+    padding: 12px;
+    border: 2px solid rgb(167, 167, 231);
+    margin: 5PX;
+}
+
+#submit{
+    background-color: rgb(217, 222, 217);
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    margin: 15px;
+    padding: 5px;
+    font-family:'Times New Roman', Times, serif;
+    font-size: medium;
+}
+  
+#submit:hover{
+    background-color: rgba(43, 248, 16, 0.1);
+}
