@@ -1,5 +1,7 @@
-import "../Stylesheets/Table.css"
-
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+import "../Stylesheets/Table.css";
+/* Hard coded Data for table
   const data = [    
     {
         id: 87873,
@@ -41,11 +43,24 @@ import "../Stylesheets/Table.css"
         clevel: 13,
     },
   ];
-  
+  */
   function Table() {
-    return (
+    
+      const [data, setData] = useState([]);
+
+  useEffect(() => {
+    // Fetch data from the backend
+    axios.get('http://localhost:5000/api/data')
+      .then(response => {
+        setData(response.data);
+      })
+      .catch(error => {
+        console.error('Error fetching data:', error);
+      });
+  }, []);
+  return (
       <div className="App">
-        <h1 style={{ textAlign: 'center' }}>Employee Data Sheet</h1>
+       
         <table className="container">
           <thead>
             <tr>
@@ -70,7 +85,7 @@ import "../Stylesheets/Table.css"
                   <td>{value.phone}</td>
                   <td>{value.city}</td>
                   <td>{value.dob}</td>
-                  <td>{value.clevel}</td>
+                  <td>{value.careerlevel}</td>
                 </tr>
               );
             })}
