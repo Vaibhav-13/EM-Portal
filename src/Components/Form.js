@@ -4,7 +4,6 @@ function Form() {
   const [id, setId] = useState("");
   const [name, setName] = useState("");
   const [gender, setGender] = useState("");
-  
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
   const [city, setCity] = useState("");
@@ -24,13 +23,14 @@ function Form() {
       if (!result.ok) {
         throw new Error('Network response was not ok');
       }
-      result = await result.json();  // Expecting JSON here
+      result = await result.json();
       console.warn(result);
       if (result.message === 'Data saved successfully') {
+        
         alert("Data saved successfully");
         window.close(); // Close the popup window
       } else {
-        alert(result.message); // Alert the message received from the server
+        alert(result.message); 
       }
     } catch (error) {
       console.error('Error:', error);
