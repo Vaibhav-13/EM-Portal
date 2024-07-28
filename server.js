@@ -12,12 +12,12 @@ app.use(express.json());
 const DataSchema = new mongoose.Schema({
   id: { type: Number, required: true },
   name: { type: String, required: true },
-  gender: { type: String, default: '' }, // Changed to String for gender
+  gender: { type: String, default: '' },
   email: { type: String, required: true },
-  phone: { type: String, required: true }, // Changed to String to handle phone numbers with leading zeros
-  city: { type: String, default: '' }, // Changed to String for city
+  phone: { type: String, required: true }, 
+  city: { type: String, default: '' }, 
   dob: { type: String, required: true },
-  careerlevel: { type: Number, required: true },
+  careerlevel: { type: Number, required: true }
 });
 
 const Data = mongoose.model('Employee_Info', DataSchema);
@@ -51,6 +51,15 @@ app.post('/api/data', async (req, res) => {
   } catch (error) {
     console.error('Error saving data:', error);
     res.status(500).json({ message: 'Failed to save data' });
+  }
+});
+
+app.get('/api/data', async (req, res) => {
+  try {
+    const employees = await Data.find();
+    res.json(employees);
+  } catch (err) {
+    res.status(400).json('Error: ' + err);
   }
 });
 
