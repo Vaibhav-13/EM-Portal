@@ -10,21 +10,23 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={
+        <Route path="/" element={ 
           <>
-            <h1 className="heading">EM-Portal</h1>
+            <h1 className="heading">EM-Portal</h1>  {/* Heading */}
             <div id="nav">
-					  <Table />
-            <div id="options">
-              <Add />
-              <Update />
-              <Delete />
+            <h1 style={{ textAlign: 'center' }}>Employee Data Sheet</h1>
+                {/* Components */}
+              <Table /> 
+              <div id="options">
+                <Add />
+                <Update />
+                <Delete />
+              </div>
             </div>
-            </div>
-            <h2 className="footer">...................</h2>
+            <h2 className="footer">...................</h2> {/* Footer */}
           </>
         } />
-        <Route path="/popup-form" element={<Form />} />
+        <Route path="/popup-form" element={<Form />} /> {/* Popup form to add employee data */}
       </Routes>
     </Router>  
   );
