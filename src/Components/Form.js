@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 function Form() {
-  const [id, setId] = useState("");
+  const [empid, setId] = useState("");
   const [name, setName] = useState("");
   const [gender, setGender] = useState("");
   const [email, setEmail] = useState("");
@@ -13,9 +13,9 @@ function Form() {
   const handleOnSubmit = async (e) => {
     e.preventDefault();
     try {
-      let result = await fetch('http://127.0.0.1:5000/api/data', {
+      let result = await fetch('http://localhost:5000/api/data', {
         method: "POST",
-        body: JSON.stringify({ id, name, gender, email, phone, city, dob, careerlevel }),
+        body: JSON.stringify({empid, name, gender, email, phone, city, dob, careerlevel }),
         headers: {
           'Content-Type': 'application/json'
         }
@@ -43,7 +43,7 @@ function Form() {
       <input
         type="number"
         placeholder="Employee ID"
-        value={id}
+        value={empid}
         onChange={(e) => setId(e.target.value)}
       />
       <input
@@ -88,7 +88,7 @@ function Form() {
         value={careerlevel}
         onChange={(e) => setCareerLevel(e.target.value)}
       /><br />
-      <button type="submit">Submit</button>
+      <button id='button' type="submit">Submit</button>
     </form>
   );
 }
