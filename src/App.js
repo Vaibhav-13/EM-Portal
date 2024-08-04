@@ -1,9 +1,7 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Add from "./Components/Add";
-import Update from "./Components/Update";
-import Delete from "./Components/Delete";
-import Table from "./Components/Table";
-import Form from "./Components/Form"; // Import the new PopupForm component
+import Add from "./Components/Add"; // Import the add component
+import Table from "./Components/Table"; // Import the new Table component
+import Form from "./Components/Form"; // Import the new Form component for adding new employee data
 import "./Stylesheets/Main.css";
 
 function App() {
@@ -15,12 +13,9 @@ function App() {
             <h1 className="heading">EM-Portal</h1>  {/* Heading */}
             <div id="nav">
             <h1 style={{ textAlign: 'center' }}>Employee Data Sheet</h1>
-                {/* Components */}
-              <Table /> 
-              <div id="options">
-                <Add />
-                <Update />
-                <Delete />
+              <Table />  {/* To show table */}
+              <div id="add">
+                <Add /> {/* To add data in table */}
               </div>
             </div>
             <h2 className="footer">...................</h2> {/* Footer */}
