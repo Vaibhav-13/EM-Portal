@@ -1,16 +1,14 @@
 .heading {
     text-align: center;
   }
-#nav{
-    background-color: rgb(223, 215, 211);
-    padding: 2%;
-    
+body{
+    background-color: rgb(234, 225, 221);
 }
 .footer{
   text-align: center;
   font-family: 'Courier New', Courier, monospace;
 }
-#options{
-  margin-top: 20px;
-  margin-left: 64%;
+#add{
+  margin-top: 15px;
+  margin-left: 77%;
 }
