@@ -108,7 +108,7 @@ function Update({ empid, onUpdate }) {
         value={employee.careerlevel}
         onChange={handleChange}
       />
-      <button id="button" type="submit">Update</button>
+      <button id="buttonAddUpdate" type="submit">Update</button>
     </form>
   );
 }
