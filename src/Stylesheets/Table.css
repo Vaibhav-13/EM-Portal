@@ -22,13 +22,13 @@ td {
 }
 
 thead {
-  background-color: #f7d0e4;
+  background-color: #e8f1fb;
 }
 
 tbody tr{
-  background-color: #bea2be;
+  background-color: #f7e9ff;
 }
 
 tbody tr:hover {
-  background-color: #9e9e9e;
+  background-color: #e1dfdf;
 }
