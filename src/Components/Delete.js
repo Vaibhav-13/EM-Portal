@@ -15,7 +15,7 @@ function Delete({ empid, onDelete }) { //to get the empid and onDelete
   };
 
   return (
-    <button id='button' onClick={handleDelete}>Delete</button> //onClick go to handleDelete function
+    <button id='buttonDelete' onClick={handleDelete}>Delete</button> //onClick go to handleDelete function
   );
 }
 
