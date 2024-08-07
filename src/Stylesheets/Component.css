@@ -1,5 +1,5 @@
-#button{
-    background-color: rgba(0, 0, 0, 0.1);
+#buttonDelete{
+    background-color: rgb(231, 225, 225);
     border: 2px solid rgb(140, 133, 186);
     border-radius: 15px;
     margin: 15px;
@@ -8,9 +8,28 @@
     font-family:'Times New Roman', Times, serif;
     font-size: medium;
 }
-#button:hover{
-    background-color: rgba(184, 240, 0, 0.1);
-    transform: scale(1.12);
+#buttonDelete:hover{
+    background-color: rgb(247, 0, 0);
+    transform: scale(1.08);
+    cursor: pointer;
+    border: 2px solid black;
+}
+
+#buttonAddUpdate{
+    background-color: rgb(231, 225, 225);
+    border: 2px solid rgb(140, 133, 186);
+    border-radius: 15px;
+    margin: 15px;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-family:'Times New Roman', Times, serif;
+    font-size: medium;
+}
+#buttonAddUpdate:hover{
+    background-color: rgb(151, 156, 161);
+    transform: scale(1.08);
+    cursor: pointer;
+    border: 2px solid black;
 }
 
 input{
@@ -35,6 +54,7 @@ input{
 }
 
 #search{   
+    margin-bottom: 10px;
     text-align: center;
 }
 #icon{
@@ -42,7 +62,7 @@ input{
     height: 25px;
     width: 25px;
     border: 0ch;
-    background-color: rgb(234, 225, 221);
+    background: fixed;
 }
 #icon:hover{
     cursor: pointer;
