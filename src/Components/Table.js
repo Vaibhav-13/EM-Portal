@@ -75,7 +75,7 @@ function Table() {
                {selectedEmpId === value.empid ? (
                   <Update empid={value.empid} onUpdate={handleUpdate} /> //to update data for empid
                 ) : (
-                  <button id="button" onClick={() => setSelectedEmpId(value.empid)}>Update</button> 
+                  <button id="buttonAddUpdate" onClick={() => setSelectedEmpId(value.empid)}>Update</button> 
                 )}
               </td>
             </tr>
