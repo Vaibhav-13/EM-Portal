@@ -12,7 +12,7 @@ function Add() {
 
   return (
     <>
-      <button id="button" onClick={openPopup}> {/*on user click open form window*/}
+      <button id="buttonAddUpdate" onClick={openPopup}> {/*on user click open form window*/}
         Add Data
       </button>
     </>
