@@ -1,8 +1,9 @@
 .heading {
     text-align: center;
+    color: rgb(85, 73, 108);
   }
 body{
-    background-color: rgb(234, 225, 221);
+  background-image: url(https://static.vecteezy.com/system/resources/previews/000/543/740/original/medical-abstract-background-polygon-and-dot-line-graphic-design-element-blue-and-white-tone-for-modern-science-futuristic-wallpaper-cover-concept-digital-network-of-health-care-template-theme-vector.jpg);
 }
 .footer{
   text-align: center;
